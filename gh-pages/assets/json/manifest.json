@@ -8,5 +8,7 @@
 			"sizes" : "150x150"
 		}
 	],
-	"start_url" : "/index.html"
+	"start_url" : "/index.html",
+	"background_color" : "#669900",
+	"display" : "standalone"
 }
