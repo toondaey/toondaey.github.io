@@ -1,0 +1,12 @@
+{
+	"short_name" : "toondaey",
+	"name" : "'Tunde Aromire",
+	"icons" : [
+		{
+			"src" : "/gh-pages/assets/img/chrome-touch-icon-150x150.png",
+			"type" : "image/png",
+			"sizes" : "150x150"
+		}
+	],
+	"start_url" : "index.html?launcher=true"
+}
