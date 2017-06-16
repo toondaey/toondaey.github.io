@@ -15,10 +15,12 @@
 	"display" : "standalone",
 	"orientation" : "portrait",
 	"scope" : "/",
+	"prefer_related_application" : true,
 	"related_applications" : [
 		{
 			"platform" : "web",
 			"url" : "/"
 		}
-	]
+	],
+	"screenshots" : []
 }

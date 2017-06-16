@@ -6,7 +6,10 @@ if ('serviceWorker' in navigator)
 		.register('/services.js')
 		.then(function (reg)
 		{
-			
+			// reg.addEventListener('fetch', function(event)
+			// {
+			// 	console.log(event);
+			// });
 		});
 	};
 }
