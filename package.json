@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Test for web apps and future portfolio pages.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toondaey/toondaey.github.io.git"
+  },
+  "keywords": [
+    "toondaey"
+  ],
+  "author": "'Tunde Aromire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toondaey/toondaey.github.io/issues"
+  },
+  "homepage": "https://toondaey.github.io",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
