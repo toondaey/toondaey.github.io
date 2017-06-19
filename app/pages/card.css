@@ -1,0 +1,302 @@
+*{
+  outline:none;
+  text-transform:uppercase;
+  color:white;
+}
+html,body{
+  margin:0;
+  padding:0;
+}
+.container{
+  width:100%;
+  height:100vh;
+  display:flex;
+}
+section{
+  width:85%;
+  height:85%;
+  display:flex;
+  margin:auto
+}
+section .front-card .arrow{
+  width:7%;
+}
+section .front-card .content{
+  flex-grow:1;
+  position:relative;
+}
+
+/*Miscellaneous designs*/
+section .front-card .content ._square{
+  position:absolute;
+  width:120px;
+  height:130px;
+  top:60px;
+  left:20px;
+  border:2px solid #a6a6a6;
+  border-radius:5px;
+}
+section .front-card .content ._square.two{
+  width:50px;
+  height:50px;
+  top:75px;
+  left:52px;
+  border-color:rgba(255, 210, 128, .7);
+}
+section .front-card .content ._square.three{
+  width:50px;
+  height:50px;
+  top:35px;
+  left:82px;
+  border-color:#f2f2f2;
+  z-index:1;
+}
+section .front-card .content ._square.four{
+  width:110px;
+  height:112px;
+  top:100px;
+  left:115px;
+}
+section .front-card .content ._square.five{
+  width:95px;
+  height:115px;
+  top:-10px;
+  left:120px;
+}
+section .front-card .content ._square.six{
+  width:20px;
+  height:20px;
+  top:0;
+  left:142px;
+  border-color:rgb(255, 210, 128);
+}
+section .front-card .content ._square.seven{
+  width:40px;
+  height:40px;
+  top:70px;
+  left:212px;
+  border-color:rgba(242, 242, 242,.8);
+}
+section .front-card .content ._square.eight{
+  width:60px;
+  height:60px;
+  top:120px;
+  left:185px;
+  border-color:rgba(255, 210, 128, .8);
+}
+
+/*The institution's logo*/
+section .front-card .content div._inst{
+  position:relative;
+  padding:7px;
+  width:50px;
+  background-color:purple;
+  border-radius:4px;
+  color:white;
+  z-index:1;
+}
+section .front-card div.content div._inst p{
+  text-align:center;
+  font-size:1.25em;
+  font-family:fantasy;
+  margin:10px 0 3px 0;
+}
+section .front-card div.content div._inst div.logo{
+  width:100%;
+  height:7px;
+  background-color:orange;
+}
+section .front-card div.content div._inst div.logo.top{
+  margin-bottom:2px;
+  border-top-left-radius:3px;
+}
+section .front-card div.content div._inst div.logo.btm{
+  border-bottom-left-radius:3px;
+}
+
+/*The chip panel*/
+section .front-card .content div._panel{
+  position:relative;
+  width:50px;
+  height:40px;
+  background-color:#fcd825;
+  padding:7px;
+  margin-top:10px;
+  border:1.5px solid grey;
+  border-radius:7px;
+  z-index:1;
+}
+
+/*The tiny prefix*/
+section .front-card .content ._prefix{
+  position:absolute;
+  top:173px;
+  font-family:sans-serif;
+  font-size:8px;
+}
+
+/*The pan number*/
+section .front-card .content div._pan-no{
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  top:100px;
+  z-index:1;
+  width:95%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+section .front-card .content div._pan-no .pan{
+  display:inline;
+  font-family:cursive;
+  font-size:26px;
+  word-spacing:4px;
+}
+
+/*Institution Name*/
+section .front-card .content ._inst-name{
+  position:absolute;
+  top:0;
+  right:0;
+  margin:0;
+  font-family:sans-serif;
+  font-weight:bold;
+  font-size:10px;
+}
+
+/*Bearer*/
+section .front-card .content ._bearer{
+  position:absolute;
+  left:0;
+  bottom:-10px;
+  margin:0;
+  font-family:fantasy;
+  font-size:18px;
+}
+
+/*Expiration details*/
+section .front-card .content .expiration{
+  position:absolute;
+  top:180px;
+  left:120px;
+  font-weight:400;
+  margin:0;
+  font-family:sans-serif;
+}
+section .front-card .content .expiration th{
+  text-align:center;
+  margin:0;
+  font-size:7px;
+}
+section .front-card .content .expiration tbody tr td p{
+  margin:0;
+  font-size:7px;
+}
+section .front-card .content .expiration tbody tr td.date{
+  font-size:16px;
+  font-family:sans-serif;
+  letter-spacing:3px;
+  padding:0 10px;
+}
+
+/*Provider Logo*/
+section .front-card .content div._sec{
+  position:absolute;
+  bottom:43%;
+  right:0;
+  height:80px;
+  text-align:center;
+}
+section .front-card .content div._sec div#mastercard{
+  position:absolute;
+  top:122px;
+}
+section .front-card .content div._sec div#mastercard p.a,
+section .front-card .content div._sec div#mastercard p.b{
+  text-transform:capitalize;
+  display:inline;
+  font-family:sans-serif;
+  font-size:17px;
+  font-weight:bold;
+  text-shadow:2px 2px 1px black;
+  font-style:italic;
+}
+section .front-card .content div._sec p:first-child{
+  margin-bottom:0;
+  font-family:sans-serif;;
+}
+section .front-card .content div._sec ._avatar{
+  height:115px;
+  padding:10px;
+  background-color:rgba(128, 128, 128, .7);
+  border:2px solid lightgrey;
+  border-radius:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+section .front-card .content ._sec ._avatar ._world{
+  width:100px;
+  height:55px;
+  background-color:silver;
+  border-radius:50px;
+}
+section .front-card .content ._sec ._avatar ._master{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+section .front-card .content ._sec ._avatar ._master .circle{
+  display:inline-block;
+  width:55px;
+  height:55px;
+  border-radius:50px;
+}
+section .front-card .content ._sec ._avatar ._master .circle.red{
+  background-color:#ff1a1a;
+  border:1px solid #e60000;
+}
+section .front-card .content ._sec ._avatar ._master .circle.orange{
+  background-color:#ffaf1a;
+  border:1px solid #e69500;
+  margin-left:-10px;
+}
+section .front-card .content div._sec p:last-child{
+  margin-top:3px;
+  font-size:10px;
+  color:white;
+  text-align:center;
+  word-spacing:3px;
+}
+section div.front-card{
+  margin:auto;
+  width:390px;
+  height:230px;
+  border-radius:15px;
+  background:-webkit-linear-gradient(left,#cc00cc,#660066);
+  display:flex;
+  flex-direction:row;
+  padding:20px;
+  box-shadow:5px 5px 10px lightgrey;
+  cursor:default;
+}
+.animate{
+  -webkit-animation-name:turn;
+  -webkit-animation-duration:1s;
+  -webkit-iteration-count:2;
+  -webkit-animation-timing-function:linear;
+  /*-webkit-perspective:100px;*/
+}
+@-webkit-keyframes turn{
+  0%{
+    -webkit-transform:rotateY(0deg);
+  }
+  50%{
+    -webkit-transform:rotateY(90deg);
+  }
+  100%{
+    -webkit-transform:rotateY(180deg);
+  }
+}
