@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
+		path = require("path");
+
+module.exports = {
+	rules: [
+		{
+			test: /\.less$/i, use: ExtractTextPlugin.extract({
+				fallback: "style-loader",
+				use: ["css-loader", "less-loader"],
+				publicPath: path.resolve(__dirname, "../../dist/assets/css"),
+			})
+		},
+		{
+			test: /\.css$/, use: ExtractTextPlugin.extract({
+				fallback: "style-loader",
+				use: ["css-loader"],
+				publicPath: "/dist/assets/css",
+			})
+		},
+		{ test: /\.html$/, use: ["html-loader"] },
+		{ test: /\.jsx?$/, exclude: /node_modules/, use: ["babel-loader", "eslint-loader"] }
+	],
+};

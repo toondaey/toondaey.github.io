@@ -1,0 +1,32 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+body #main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -o-flex;
+}
+body #main ._card {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  background-color: #EE800E;
+  width: 400px;
+  height: 230px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 2px grey;
+}
+body #main ._card canvas#card {
+  z-index: 10;
+}

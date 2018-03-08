@@ -1,0 +1,94 @@
+@import (reference) "./global.less";
+
+@gt-font: "Open Sans", san-serif;
+
+html,body {
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	// Main placeholder
+	#main {
+		width: 100%;
+		height: 100%;
+		.presets-value(display, flex);
+		// The main card
+		._card {
+			overflow: hidden;
+			position:relative;
+			margin: auto;
+			background-color: #EE800E;
+			width: 400px;
+			height: 230px;
+			border-radius: 15px;
+			box-shadow: 1px 1px 20px 2px grey;
+			canvas#card {
+				z-index: 10;
+			}
+			// ._bg {
+			// 	path {
+			// 		fill: none;
+			// 		// .presets-value(fill, linear-gradient(to bottom right, #F39600, #FBCB24));
+			// 		stroke: white;
+			// 		stroke-width: 1px;
+			// 	}
+			// }
+			// ._content {
+			// 	width:100%;
+			// 	height: 100%;
+			// 	position: absolute;
+			// 	z-index: 10;
+			// 	._logo {
+			// 		position: relative;
+			// 		top: 15px;
+			// 		left: 50px;
+			// 		display: block;
+			// 		._main{
+			// 			position: relative;
+			// 			width: 50px;
+			// 			height: 50px;
+			// 			border:1px solid white;
+			// 			background-color: #EE800E;
+			// 			._square {
+			// 				width: 11px;
+			// 				height: 11px;
+			// 				background-color: white;
+			// 				border:1px solid white;
+			// 				position: absolute;
+			// 				top: 10px;
+			// 				right: 10px;
+			// 			}
+			// 			._gtbank {
+			// 				position: absolute;
+			// 				bottom: 0;
+			// 				height: 50%;
+			// 				width: 100%;
+			// 				text-align: center;
+			// 				.presets-value(display, flex);
+			// 				p {
+			// 					margin: auto;
+			// 					font-family: @gt-font;
+			// 					font-weight: bold;
+			// 					color: white;
+			// 					font-size: 11px;
+			// 					// .presets-key(transform, scale(.7, 1));
+			// 					span {
+			// 						text-transform: uppercase;
+			// 					}
+			// 				}
+			// 			}
+			// 		}
+			// 		._gtbtext {
+			// 			font-family: @gt-font;
+			// 			font-size: 8px;
+			// 			font-weight: bold;
+			// 		}
+			// 	}
+			// }
+		}
+	}
+}

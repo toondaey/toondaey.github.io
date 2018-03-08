@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+const HTMLWepackPlugin = require("html-webpack-plugin"),
+		ExtractTextPlugin = require("extract-text-webpack-plugin"),
+		CleanWebpackPlugin = require("clean-webpack-plugin"),
+		webpack = require("webpack"),
+		path = require("path")
+		prod = process.env.NODE_ENV === "production"
+		UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
+const config = [
+	new HTMLWepackPlugin({
+		title: "GTBank ATM Card",
+		template: path.resolve(__dirname, "../pages/gtbank.html"),
+		filename: "pages/gtbank.html",
+		excludeChunks: ["fcmb"],
+		chunks: ["gtbank"],
+	}),
+	new HTMLWepackPlugin({
+		title: "FCMB ATM Card",
+		template: path.resolve(__dirname, "../pages/fcmb.html"),
+		filename: "pages/fcmb.html",
+		excludeChunks: ["gtbank"],
+		chunks: ["fcmb"],
+	}),
+
+	new ExtractTextPlugin({
+		filename: "assets/css/[name].css",
+		allChunks: true,
+		disable: false,
+	}),
+
+	new webpack.NamedModulesPlugin(),
+	new webpack.HotModuleReplacementPlugin(),
+
+	new CleanWebpackPlugin([ "dist", ], { root: path.resolve(__dirname, "../../") }),
+];
+
+if (prod) config.push(new UglifyJSPlugin());
+
+module.exports = config;

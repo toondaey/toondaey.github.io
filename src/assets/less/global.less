@@ -1,0 +1,48 @@
+.presets-key(@key, @value) {
+	@{key} : @value;
+	-moz-@{key} : @value;
+	-ms-@{key} : @value;
+	-webkit-@{key} : @value;
+	-o-@{key} : @value;
+}
+.presets-value(@key, @value) {
+	@{key} : @value;
+	@{key} : ~"-moz-@{value}";
+	@{key} : ~"-ms-@{value}";
+	@{key} : ~"-webkit-@{value}";
+	@{key} : ~"-o-@{value}";
+}
+.presets-both(@key, @value) {
+	@{key} : @value;
+	-moz-@{key} : ~"-moz-@{value}";
+	-ms-@{key} : ~"-ms-@{value}";
+	-webkit-@{key} : ~"-webkit-@{value}";
+	-o-@{key} : ~"-o-@{value}";
+}
+.keyframes(@name, @from, @to)
+{
+	@frames : {
+		from { @from(); }
+		to { @to(); }
+	};
+
+	@keyframes @name {
+		@frames();
+	}
+
+	@-moz-keyframes @name {
+		@frames();
+	}
+
+	@-webkit-keyframes @name {
+		@frames();
+	}
+
+	@-o-keyframes @name {
+		@frames();
+	}
+
+	@-ms-keyframes @name {
+		@frames();
+	}
+}

@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+const path = require("path");
+
+module.exports = {
+	gtbank: path.resolve(__dirname, "../assets/js/gtbank.js"),
+	fcmb: path.resolve(__dirname, "../assets/js/fcmb.js"),
+};
